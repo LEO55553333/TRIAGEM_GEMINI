@@ -1,4 +1,4 @@
- # TRIAGEM_GEMINI
+# TRIAGEM_GEMINI
 
 Chamada API Gemini para Triagem Processual em Lote
 
@@ -9,6 +9,16 @@ Instale as dependências:
 ```bash
 pip install -r requirements.txt
 ```
+
+## Configuração da API Key
+
+Crie um arquivo `.env` na pasta raiz `C:\API_gemini` com sua chave de API do Gemini:
+
+```
+GEMINI_API_KEY=sua_chave_api_aqui
+```
+
+**Importante:** O arquivo `.env` deve estar na pasta raiz junto com o `processo.py`
 
 ## Estrutura de Pastas
 
@@ -26,6 +36,7 @@ pip install -r requirements.txt
 C:\API_gemini\
 ├── processo.py
 ├── requirements.txt
+├── .env
 ├── 01\
 │   ├── prompt.txt
 │   └── processo1.pdf
